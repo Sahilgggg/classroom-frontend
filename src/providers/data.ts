@@ -57,7 +57,8 @@ const options: CreateDataProviderOptions = {
     },
 
     getTotalCount: async (response) => {
-      const payload: ListResponse = await response.json();
+      const cloned = response.clone();
+      const payload: ListResponse = await cloned.json();
       return payload.pagination?.total ?? payload.data?.length ?? 0;
     },
   },

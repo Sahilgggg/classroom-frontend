@@ -16,10 +16,16 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true,
+
+    /* ADD THESE TWO LINES */
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"]
     }
   },
-  "include": ["src"]
+  /* UPDATE THIS TO INCLUDE THE ROOT CONFIG */
+  "include": ["src", "vite.config.ts"]
 }

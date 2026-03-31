@@ -89,7 +89,7 @@
   },
   "scripts": {
     "dev": "refine dev",
-    "build": "refine build",
+    "build": "tsc && refine build",
     "start": "refine start",
     "refine": "refine"
   },

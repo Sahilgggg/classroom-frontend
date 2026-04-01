@@ -2,7 +2,7 @@ import { createAuthClient } from "better-auth/react";
 import { BACKEND_BASE_URL, USER_ROLES } from "../constants";
 
 export const authClient = createAuthClient({
-  baseURL: `${BACKEND_BASE_URL}auth`,
+  baseURL: "https://classroom-backend-production-72d4.up.railway.app/api/auth",
   user: {
     additionalFields: {
       role: {
